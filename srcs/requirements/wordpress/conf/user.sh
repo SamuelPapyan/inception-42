@@ -4,8 +4,8 @@ if wp user get Johnik >/dev/null 2>&1; then
 else
    wp user create ${WP_USR} ${WP_EMAIL} --role=subscriber --user_pass=${WP_PWD}
 fi
-wp user update "username" --user_pass="${WP_PWD}" --skip-email
-if wp user get "username" >/dev/null 2>&1; then
+wp user update "spapyan" --user_pass="${WP_PWD}" --skip-email
+if wp user get "spapyan" >/dev/null 2>&1; then
     echo "Logged in successfully as root."
 else
     echo "Login failed. Please check your root credentials."
