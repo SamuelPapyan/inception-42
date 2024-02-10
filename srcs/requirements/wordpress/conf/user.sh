@@ -1,4 +1,4 @@
-wp core install --url=localhost --title="my insception" --admin_user=${WP_ADMIN_USR} --admin_password=${WP_ADMIN_PWD} --admin_email=${WP_ADMIN_EMAIL}
+wp core install --url=localhost --title="spapyan | Inception" --admin_user=${WP_ADMIN_USR} --admin_password=${WP_ADMIN_PWD} --admin_email=${WP_ADMIN_EMAIL}
 if wp user get Johnik >/dev/null 2>&1; then
     echo "User Johnik exists."
 else
