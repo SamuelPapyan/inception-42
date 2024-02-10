@@ -28,7 +28,7 @@ CREATE USER 'wpuser'@'%' IDENTIFIED by 'wppass';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'%';
 FLUSH PRIVILEGES;
 EOF
-        # run init.sql
+        run init.sql
         /usr/bin/mysqld --user=mysql --bootstrap < /tmp/create_db.sql
         rm -f /tmp/create_db.sql
 fi
