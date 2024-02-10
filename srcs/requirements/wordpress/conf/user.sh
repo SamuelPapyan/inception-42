@@ -10,7 +10,5 @@ if wp user get "spapyan" >/dev/null 2>&1; then
 else
     echo "Login failed. Please check your root credentials."
 fi
-wp theme install astra --activate
-wp theme install https://downloads.brainstormforce.com/astra/astra.zip --active
-wp theme install https://github.com/brainstormforce/astra/archive/master.zip --activate
+wp theme activate twentytwentytwo
 /usr/sbin/php-fpm8 -F
