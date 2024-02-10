@@ -6,13 +6,13 @@
 #    By: spapyan <spapyan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/08 17:13:56 by spapyan           #+#    #+#              #
-#    Updated: 2024/02/08 17:13:56 by spapyan          ###   ########.fr        #
+#    Updated: 2024/02/10 18:41:20 by spapyan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FROM alpine:3.19
+FROM alpine:3.16
 
-ARG PHP_VERSION=82
+ARG PHP_VERSION=8
 
 RUN apk update && apk upgrade && apk add --no-cache \
     php${PHP_VERSION} \

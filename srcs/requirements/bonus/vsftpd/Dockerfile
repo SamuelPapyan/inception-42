@@ -6,11 +6,11 @@
 #    By: spapyan <spapyan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/08 17:14:15 by spapyan           #+#    #+#              #
-#    Updated: 2024/02/08 17:14:15 by spapyan          ###   ########.fr        #
+#    Updated: 2024/02/10 18:41:36 by spapyan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FROM alpine:3.19
+FROM alpine:3.16
 
 ARG FTP_USR \
     FTP_PWD

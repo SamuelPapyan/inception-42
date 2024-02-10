@@ -6,11 +6,11 @@
 #    By: spapyan <spapyan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/08 17:14:20 by spapyan           #+#    #+#              #
-#    Updated: 2024/02/08 17:14:20 by spapyan          ###   ########.fr        #
+#    Updated: 2024/02/10 18:41:43 by spapyan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FROM alpine:3.19
+FROM alpine:3.16
 RUN	apk update && apk upgrade && apk add --no-cache nginx
 
 RUN echo "server {" > /etc/nginx/http.d/default.conf && \
